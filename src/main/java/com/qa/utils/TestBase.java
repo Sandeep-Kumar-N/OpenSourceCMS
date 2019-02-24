@@ -5,11 +5,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
 public class TestBase {
 	public static Properties prop;
@@ -44,31 +41,5 @@ public class TestBase {
 		driver.close();
 	}
 	
-	public static void MouseOver(WebElement element) {
-		Actions action = new Actions(driver);
-		action.moveToElement(element).build().perform();
-	}
 	
-	public void swith_Frame(WebElement iframe) {
-		driver.switchTo().frame(iframe);
-		
-	}
-	
-	public void swith_Default_Frame() {
-		driver.switchTo().parentFrame();
-		
-	}
-	
-	public void Set_InterHTML_With_JavaScript(WebElement element, String text) {
-		element.click();
-		JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
-//		javascriptExecutor.executeScript("arguments[0].innerhtml='"+text+"';", element);
-		javascriptExecutor.executeScript("document.getElementsByTagName('p')[0].innerHTML='"+text+"';");
-	}
-	
-	public void Click_With_JavaScript(WebElement element) {
-		JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
-		javascriptExecutor.executeScript("arguments[0].click();", element);
-		
-	}
 }
