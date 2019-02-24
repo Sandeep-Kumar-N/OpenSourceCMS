@@ -1,0 +1,100 @@
+[
+  {
+    "line": 1,
+    "name": "Automating Action in HomePage",
+    "description": "",
+    "id": "automating-action-in-homepage",
+    "keyword": "Feature",
+    "uri": "HomePage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4856507800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPageStepDefinition.before(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login with User Credentials",
+        "description": "",
+        "id": "login-to-opensourcecms-application;login-with-user-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 137785100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPageStepDefinition.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2130517900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in OpenSourceCMS Login Page",
+            "match": {
+              "location": "LoginPageStepDefinition.user_is_in_OpenSourceCMS_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14767900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is in LoginPage",
+            "match": {
+              "location": "LoginPageStepDefinition.user_is_in_LoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2395125300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Enters UserName, Password and Clicks on Login Button",
+            "match": {
+              "location": "LoginPageStepDefinition.user_Enters_UserName_Password_and_Clicks_on_Login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18504000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Navigates to HomePage",
+            "match": {
+              "location": "LoginPageStepDefinition.user_Navigates_to_HomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to OpenSourceCMS Application",
+    "description": "",
+    "id": "login-to-opensourcecms-application",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
