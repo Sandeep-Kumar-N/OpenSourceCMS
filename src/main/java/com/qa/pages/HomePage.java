@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.utils.TestBase;
+import com.qa.utils.TestUtils;
 
 public class HomePage extends TestBase{
 	
@@ -23,8 +24,8 @@ public class HomePage extends TestBase{
 		return driver.getTitle();
 	}
 	
-	public WriteNewStoryPage Click_New_Story() {		
-		MouseOver(subjectElem);
+	public WriteNewStoryPage Click_New_Story() {
+		TestUtils.MouseOver(subjectElem);
 		Write_new_story.click();
 		return new WriteNewStoryPage();
 	}

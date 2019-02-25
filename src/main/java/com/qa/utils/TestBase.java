@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TestBase {
+public class TestBase{
 	public static Properties prop;
 	public static WebDriver driver;
 

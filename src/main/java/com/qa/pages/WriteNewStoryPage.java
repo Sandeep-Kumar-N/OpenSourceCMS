@@ -8,7 +8,8 @@ import com.qa.utils.TestBase;
 import com.qa.utils.TestUtils;
 
 public class WriteNewStoryPage extends TestBase{
-
+	TestUtils utils;
+	
 	@FindBy(xpath="//input[@id=\"title\"]")
 	WebElement titlePrompt;
 	
@@ -30,6 +31,7 @@ public class WriteNewStoryPage extends TestBase{
 	
 	public WriteNewStoryPage() {
 		PageFactory.initElements(driver, this);
+		utils = new TestUtils();
 	}
 	
 	public String NewStory_Page_Title() {
@@ -41,29 +43,29 @@ public class WriteNewStoryPage extends TestBase{
 	}
 	
 	public void enter_Paragraph() {
-		swith_Frame(iframe);
+		utils.swith_Frame(iframe);
 //		paraPrompt.sendKeys(TestUtils.PARAGRAPH_TEXT);
-		Set_InterHTML_With_JavaScript(paraPrompt,TestUtils.PARAGRAPH_TEXT);
-		swith_Default_Frame();
+		utils.Set_InterHTML_With_JavaScript(paraPrompt,utils.PARAGRAPH_TEXT);
+		utils.swith_Default_Frame();
 	}
 	
 	public HomePage enter_title_and_description_and_publish() {
 		titlePrompt.sendKeys(TestUtils.TITLE_NAME);
-		swith_Frame(iframe);
-		Set_InterHTML_With_JavaScript(paraPrompt,TestUtils.PARAGRAPH_TEXT);
+		utils.swith_Frame(iframe);
+		utils.Set_InterHTML_With_JavaScript(paraPrompt,TestUtils.PARAGRAPH_TEXT);
 //		paraPrompt.sendKeys(TestUtils.PARAGRAPH_TEXT);
-		swith_Default_Frame();
+		utils.swith_Default_Frame();
 		publishBtn.click();
 		return new HomePage();
 	}
 	
 	public void Publish() {
 //		publishBtn.click();
-		Click_With_JavaScript(publishBtn);
+		utils.Click_With_JavaScript(publishBtn);
 	}
 	
 	public HomePage HomeButtonClick() {
-		MouseOver(dashboard);
+		utils.MouseOver(dashboard);
 		homeBtn.click();
 		return new HomePage();
 	}
