@@ -1,3 +1,5 @@
 ### Below Folders data should be ignored
-#cucumber-outputs/
-#test-output/
+cucumber-outputs/
+test-output/
+!cucumber-outputs
+!test-output
