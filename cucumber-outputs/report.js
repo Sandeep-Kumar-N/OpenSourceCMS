@@ -6,76 +6,110 @@ formatter.feature({
   "id": "automating-action-in-homepage",
   "keyword": "Feature"
 });
-formatter.uri("Login.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Login to OpenSourceCMS Application",
-  "description": "",
-  "id": "login-to-opensourcecms-application",
-  "keyword": "Feature"
-});
 formatter.before({
-  "duration": 4856507800,
+  "duration": 8143339801,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Login with User Credentials",
+  "line": 4,
+  "name": "Write a New Story",
   "description": "",
-  "id": "login-to-opensourcecms-application;login-with-user-credentials",
+  "id": "automating-action-in-homepage;write-a-new-story",
   "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 5,
-  "name": "User is in OpenSourceCMS Login Page",
-  "keyword": "Given "
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.step({
   "line": 6,
-  "name": "User is in LoginPage",
-  "keyword": "When "
+  "name": "User is in HomePage",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "User Enters UserName, Password and Clicks on Login Button",
-  "keyword": "Then "
+  "name": "User clicks on WriteNewStory",
+  "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "User Navigates to HomePage",
+  "name": "Verify AddNewPost Page",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 9,
+  "name": "Enter Title and Paragraph",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "Click on publish",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "Go Back to HomePage",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "Verify HomePage",
+  "keyword": "And "
+});
 formatter.match({
-  "location": "LoginPageStepDefinition.user_is_in_OpenSourceCMS_Login_Page()"
+  "location": "HomePageStepDefinition.user_is_in_HomePage()"
 });
 formatter.result({
-  "duration": 2130517900,
+  "duration": 4568069000,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPageStepDefinition.user_is_in_LoginPage()"
+  "location": "HomePageStepDefinition.user_clicks_on_WriteNewStory()"
 });
 formatter.result({
-  "duration": 14767900,
+  "duration": 4254609000,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPageStepDefinition.user_Enters_UserName_Password_and_Clicks_on_Login_Button()"
+  "location": "NewStoryStepDefinition.verify_AddNewPost_Page()"
 });
 formatter.result({
-  "duration": 2395125300,
+  "duration": 17647799,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPageStepDefinition.user_Navigates_to_HomePage()"
+  "location": "NewStoryStepDefinition.enter_Title_and_Paragraph()"
 });
 formatter.result({
-  "duration": 18504000,
+  "duration": 493990300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "NewStoryStepDefinition.click_on_publish()"
+});
+formatter.result({
+  "duration": 1322455700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "NewStoryStepDefinition.go_Back_to_HomePage()"
+});
+formatter.result({
+  "duration": 848748301,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageStepDefinition.verify_HomePage()"
+});
+formatter.result({
+  "duration": 4811201,
   "status": "passed"
 });
 formatter.after({
-  "duration": 137785100,
+  "duration": 181870000,
   "status": "passed"
 });
 });

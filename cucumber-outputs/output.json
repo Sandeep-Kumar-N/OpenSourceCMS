@@ -1,20 +1,12 @@
 [
   {
     "line": 1,
-    "name": "Automating Action in HomePage",
-    "description": "",
-    "id": "automating-action-in-homepage",
-    "keyword": "Feature",
-    "uri": "HomePage.feature"
-  },
-  {
-    "line": 1,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 4856507800,
+              "duration": 8143339801,
               "status": "passed"
             },
             "match": {
@@ -22,14 +14,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Login with User Credentials",
+        "line": 4,
+        "name": "Write a New Story",
         "description": "",
-        "id": "login-to-opensourcecms-application;login-with-user-credentials",
+        "id": "automating-action-in-homepage;write-a-new-story",
         "after": [
           {
             "result": {
-              "duration": 137785100,
+              "duration": 181870000,
               "status": "passed"
             },
             "match": {
@@ -42,59 +34,101 @@
         "steps": [
           {
             "result": {
-              "duration": 2130517900,
+              "duration": 4568069000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User is in OpenSourceCMS Login Page",
+            "line": 6,
+            "name": "User is in HomePage",
             "match": {
-              "location": "LoginPageStepDefinition.user_is_in_OpenSourceCMS_Login_Page()"
+              "location": "HomePageStepDefinition.user_is_in_HomePage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 14767900,
+              "duration": 4254609000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User is in LoginPage",
+            "line": 7,
+            "name": "User clicks on WriteNewStory",
             "match": {
-              "location": "LoginPageStepDefinition.user_is_in_LoginPage()"
+              "location": "HomePageStepDefinition.user_clicks_on_WriteNewStory()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2395125300,
+              "duration": 17647799,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User Enters UserName, Password and Clicks on Login Button",
+            "line": 8,
+            "name": "Verify AddNewPost Page",
             "match": {
-              "location": "LoginPageStepDefinition.user_Enters_UserName_Password_and_Clicks_on_Login_Button()"
+              "location": "NewStoryStepDefinition.verify_AddNewPost_Page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 18504000,
+              "duration": 493990300,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User Navigates to HomePage",
+            "line": 9,
+            "name": "Enter Title and Paragraph",
             "match": {
-              "location": "LoginPageStepDefinition.user_Navigates_to_HomePage()"
+              "location": "NewStoryStepDefinition.enter_Title_and_Paragraph()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1322455700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on publish",
+            "match": {
+              "location": "NewStoryStepDefinition.click_on_publish()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 848748301,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Go Back to HomePage",
+            "match": {
+              "location": "NewStoryStepDefinition.go_Back_to_HomePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4811201,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify HomePage",
+            "match": {
+              "location": "HomePageStepDefinition.verify_HomePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
           }
         ]
       }
     ],
-    "name": "Login to OpenSourceCMS Application",
+    "name": "Automating Action in HomePage",
     "description": "",
-    "id": "login-to-opensourcecms-application",
+    "id": "automating-action-in-homepage",
     "keyword": "Feature",
-    "uri": "Login.feature"
+    "uri": "HomePage.feature"
   }
 ]
